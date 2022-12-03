@@ -2,8 +2,7 @@ import aoc_utils
 
 aoc_utils.SAMPLE = False
 
-with open('Day2.txt', 'r', encoding = 'UTF-8') as f:
-    games = f.read().splitlines()
+games = aoc_utils.input_string_list()
 
 
 def part_1():

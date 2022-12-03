@@ -23,7 +23,7 @@ def get_day():
 def filepath():
     """get the filepath of the input"""
     return os.path.abspath(
-        f"{os.path.dirname(_top_level_caller())}/{'Day'}{get_day()}{'.s' if SAMPLE else ''}txt"
+        f"{os.path.dirname(_top_level_caller())}/inputs/{'Day'}{get_day()}{'.s' if SAMPLE else ''}txt"
     )
 
 
@@ -58,4 +58,3 @@ def input_block_list():
 def filter_empty(li):
     """remove empty entries (e.g. when splitting a string)"""
     return list(filter(None, li))
-    
