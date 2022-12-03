@@ -3,7 +3,7 @@
 import inspect
 import os
 
-"""Whether to use a test file"""
+#Whether to use a sample file or not.
 SAMPLE = False
 
 
@@ -27,45 +27,35 @@ def filepath():
     )
 
 
-def input():
+def input_file():
     """get a reference straight to the input file"""
-    return open(filepath(), "r")
+    return open(filepath(), "r", encoding='UTF-8')
 
 
 def input_string():
     """read input into a string"""
-    return open(filepath(), "r").read().strip()
+    return open(filepath(), "r", encoding='UTF-8').read().strip()
 
 
 def input_int_list():
     """parse input into a list of ints"""
-    with open(filepath(), "r") as file:
+    with open(filepath(), "r", encoding='UTF-8') as file:
         return [int(line.rstrip()) for line in file]
 
 
 def input_string_list():
     """parse input into a list of strings"""
-    with open(filepath(), "r") as file:
+    with open(filepath(), "r", encoding='UTF-8') as file:
         return [line.rstrip() for line in file]
 
 
 def input_block_list():
     """input split by paragraph i.e. two newlines"""
-    with open(filepath(), "r") as file:
+    with open(filepath(), "r", encoding='UTF-8') as file:
         return file.read().strip().split("\n\n")
 
 
 def filter_empty(li):
     """remove empty entries (e.g. when splitting a string)"""
     return list(filter(None, li))
-
-
-def sum_list(li):
-    """converts all values in list to integer and finds sum"""
-    y = [eval(i) for i in li]
-    c = 0
-    for b in range(len(y)):
-        c += y[b]
-    return c
-
-
+    
