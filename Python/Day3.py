@@ -22,9 +22,7 @@ def solutions():
                 priority += (d[i])
                 break
 
-    i = 0
-
-    while i < len(list_input):
+    for i in range(0, len(list_input), 3):
         first_elf = list_input[i]
         second_elf = list_input[i+1]
         third_elf = list_input[i+2]
@@ -32,7 +30,6 @@ def solutions():
             if letter in second_elf and letter in third_elf:
                 priority2 += (d[letter])
                 break
-        i += 3
     print('Part 1 =', priority)
     print('Part 2 =', priority2)
 

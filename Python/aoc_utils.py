@@ -22,9 +22,7 @@ def get_day():
 
 def filepath():
     """get the filepath of the input"""
-    return os.path.abspath(
-        f"{os.path.dirname(_top_level_caller())}/inputs/{'Day'}{get_day()}{'.s' if SAMPLE else ''}txt"
-    )
+    return os.path.abspath(f"{os.path.dirname(_top_level_caller())}/inputs/Day{get_day()}{'.s' if SAMPLE else ''}txt")
 
 
 def input_file():

@@ -27,13 +27,12 @@ def part_1():
                 score += 5
             else:
                 score += 9
+        elif second == 'X':
+            score += 7
+        elif second == 'Y':
+            score += 2
         else:
-            if second == 'X':
-                score += 7
-            elif second == 'Y':
-                score += 2
-            else:
-                score += 6
+            score += 6
     return score
 
 def part_2():
@@ -58,13 +57,12 @@ def part_2():
                 score += 5
             else:
                 score += 9
+        elif second == 'X':
+            score += 2
+        elif second == 'Y':
+            score += 6
         else:
-            if second == 'X':
-                score += 2
-            elif second == 'Y':
-                score += 6
-            else:
-                score += 7
+            score += 7
 
     return score
 
