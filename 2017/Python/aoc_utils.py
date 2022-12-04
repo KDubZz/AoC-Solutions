@@ -58,6 +58,12 @@ def input_tab_list():
     with open(filepath(), "r", encoding='UTF-8') as file:
         return [line.rstrip('\n').split('\t') for line in file]
 
+def splitted_lines(inp: str):
+    with open(filepath(), "r", encoding='UTF-8') as file:
+        return [line.rstrip().split(inp) for line in file]
+
+
+
 def filter_empty(li):
     """remove empty entries (e.g. when splitting a string)"""
     return list(filter(None, li))
