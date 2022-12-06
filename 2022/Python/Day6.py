@@ -13,7 +13,6 @@ def part_1():
 def part_2():
 	inp = aoc_utils.input_string()
 	for count, value in enumerate(more_itertools.windowed(inp, 14)):
-		print(set(value))
 		if len(set(value)) == 14:
 			return count + 14
 
