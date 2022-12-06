@@ -62,8 +62,17 @@ def splitted_lines(inp: str):
     with open(filepath(), "r", encoding='UTF-8') as file:
         return [line.rstrip().split(inp) for line in file]
 
+def input_string_space_list():
+    with open(filepath(), "r", encoding='UTF-8') as file:
+        x = [line.rstrip() for line in file]
+        z = []
+        for cross in x:
+            y = cross.split(' ')
+            z.append(y)
+        return z
 
 
 def filter_empty(li):
     """remove empty entries (e.g. when splitting a string)"""
     return list(filter(None, li))
+
