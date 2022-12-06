@@ -41,10 +41,9 @@ def part_2():
 				break
 			if crates[start] == []:
 				continue
-			else:
-				transit = crates[start].pop()
-				crates[end] += transit
+			transit = crates[start].pop()
+			crates[end] += transit
 	return ''.join(crate[-1] for crate in crates)
 
-
-print('Part 1:', part_1(), '\nPart 2:', part_2())
+if __name__ == '__main__':
+	print('Part 1:', part_1(), '\nPart 2:', part_2())
