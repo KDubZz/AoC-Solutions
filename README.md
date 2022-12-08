@@ -6,6 +6,8 @@ I'm Kshitij, a 4th form at St. Paul's School. I've been coding for a long time n
 ### Navigation
 
 This is the **AoC** repository. My other projects (if I've made them) are located in other repos. 
+&nbsp;
+&nbsp;
 ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=KDubZz&hide=prs&show_icons=true&theme=radical)
 
 # Advent of Code
