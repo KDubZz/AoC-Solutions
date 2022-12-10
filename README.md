@@ -6,6 +6,9 @@ I'm Kshitij, a 4th form at St. Paul's School. I've been coding for a long time n
 ### Navigation
 
 This is the **AoC** repository. My other projects (if I've made them) are located in other repos. 
+&nbsp;
+&nbsp;
+![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=KDubZz&hide=prs&show_icons=true&theme=radical)
 
 # Advent of Code
 >[Advent of Code](https://adventofcode.com/) is an Advent calendar of small programming puzzles for a variety of skill sets and skill levels that can be solved in any programming language you like. People use them as a speed contest, interview prep, company training, university coursework, practice problems, or to challenge each other.
