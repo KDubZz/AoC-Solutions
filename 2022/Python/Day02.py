@@ -1,14 +1,7 @@
 import aoc_utils
 
-aoc_utils.SAMPLE = False
 
-games = aoc_utils.input_string_list()
-
-
-def part_1():
-    """
-    solution for part 1
-    """
+def part_1(games):
     score = 0
     for i in range(2500):
         first = games[i].split(' ')[0]
@@ -35,10 +28,8 @@ def part_1():
             score += 6
     return score
 
-def part_2():
-    """
-    solution for part 2
-    """
+
+def part_2(games):
     score = 0
     for i in range(2500):
         first = games[i].split(' ')[0]
@@ -63,9 +54,10 @@ def part_2():
             score += 6
         else:
             score += 7
-
     return score
+
 
 if __name__ == '__main__':
-    print('Part 1:', part_1())
-    print('Part 2:', part_2())
+    games = aoc_utils.input_string_list()
+    print('Part 1:', part_1(games))
+    print('Part 2:', part_2(games))

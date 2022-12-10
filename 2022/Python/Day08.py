@@ -50,6 +50,7 @@ def score(lst, x, y):
 			break
 	return reduce((lambda m, n: m*n), count)
 
+
 def part_1():
 	ans = 0
 	for y, line in enumerate(lines):
@@ -57,6 +58,8 @@ def part_1():
 			if done(lst, x, y):
 				ans += 1
 	return ans
+
+
 def part_2():
 	ans = 0
 	for y, line in enumerate(lines):

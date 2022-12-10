@@ -2,10 +2,7 @@ import aoc_utils
 from collections import defaultdict
 
 
-def part_1():
-	inp = aoc_utils.input_string_list()
-	store = defaultdict(int)
-	x = []
+def part_1(inp, store, x):
 	for i in range(len(inp)):
 		line = inp[i].split()
 		if line[0].isnumeric():
@@ -19,10 +16,7 @@ def part_1():
 	return sum(val for val in store.values() if val<=100000)
 			
 
-def part_2():
-	inp = aoc_utils.input_string_list()
-	store = defaultdict(int)
-	x = []
+def part_2(inp, store, x):
 	for i in range(len(inp)):
 		line = inp[i].split()
 		if line[0].isnumeric():
@@ -33,7 +27,6 @@ def part_2():
 				x.pop()
 			else:
 				x.append(line[2])
-	count = 0
 	prev_val = 1000000000
 	for val in store.values():
 		if val >= store['/'] - 40000000 and val < prev_val:
@@ -42,5 +35,10 @@ def part_2():
 	
 	
 if __name__ == '__main__':
-	print('Part 1:', part_1())
-	print('Part 2:', part_2())
+	inp = aoc_utils.input_string_list()
+	store = defaultdict(int)
+	empty = []
+	print('Part 1:', part_1(inp, store, empty))
+	store = defaultdict(int)
+	empty = []
+	print('Part 2:', part_2(inp, store, empty))
