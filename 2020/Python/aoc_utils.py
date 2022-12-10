@@ -51,6 +51,13 @@ def input_block_list():
     """input split by paragraph i.e. two newlines"""
     with open(filepath(), "r", encoding='UTF-8') as file:
         return file.read().strip().split("\n\n")
+        """
+        y = []
+        for i in x:
+            s = i.replace('\n', '')
+            y.append(s)
+        return y
+        """
 
 
 def input_tab_list():
