@@ -48,6 +48,7 @@ def solution(inp, tail_length: int):
 			for x in range(1, tail_length + 1):
 				position[x] = move_tail(position[x-1], position[x])
 			prev_visited.add((position[tail_length][0], position[tail_length][1]))
+	print(position)
 	return(len(prev_visited))
 
 
