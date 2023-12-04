@@ -5,16 +5,10 @@ inp = puzzle.input_data.splitlines()
 
 def part1(inp):
 	nums_only = []
-	total = 0
 	for value in inp:
-		temp = ''
-		for char in value:
-			if char.isdigit():
-				temp += char
+		temp = ''.join(char for char in value if char.isdigit())
 		nums_only.append(temp)
-	for line in nums_only:
-		total += int(f"{line[0]}{line[-1]}")
-	return total
+	return sum(int(f"{line[0]}{line[-1]}") for line in nums_only)
 
 def part2(inp):
 	str_nums = ['one','two','three','four','five','six','seven','eight','nine']
@@ -27,9 +21,10 @@ def part2(inp):
 			if number in temp:
 				temp = temp.replace(number, replacement_str_nums[str_nums.index(number)])
 		reset_nums_only.append(temp)
-	counter = part1(reset_nums_only)
-	return counter
+	return part1(reset_nums_only)
 
 if __name__ == '__main__':
 	print(f"Part 1: {part1(inp)}")
 	print(f"Part 2: {part2(inp)}")
+	puzzle.answer_a = part1(inp)
+	puzzle.answer_b = part2(inp)

@@ -16,10 +16,9 @@ def process(inp, symbol):
 				curr_num += inp[y][x]
 				for x_displacement in displacement:
 					for y_displacement in displacement:
-						if (x+x_displacement) >= 0 and (x+x_displacement) < len(inp[y]) and (y+y_displacement) >= 0 and (y+y_displacement) < len(inp):
-							if inp[y+y_displacement][x+x_displacement] in symbol:
-								number_found = True
-								symbol_locations.append((y+y_displacement, x+x_displacement))
+						if (x+x_displacement) >= 0 and (x+x_displacement) < len(inp[y]) and (y+y_displacement) >= 0 and (y+y_displacement) < len(inp) and inp[y+y_displacement][x+x_displacement] in symbol:
+							number_found = True
+      						symbol_locations.append((y+y_displacement, x+x_displacement))
 			else:
 				if number_found == True:
 					for symbol_location in symbol_locations:
