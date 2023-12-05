@@ -24,5 +24,6 @@ def process(inp):
 	return total, sum(cards)
 
 if __name__ == '__main__':
-	print(f"Part 1: {process(inp)[0]}")
-	print(f"Part 2: {process(inp)[1]}")
+	sols = process(inp)
+	print(f"Part 1: {sols[0]}")
+	print(f"Part 2: {sols[1]}")
