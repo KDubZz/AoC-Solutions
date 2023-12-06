@@ -27,13 +27,13 @@ def main(lines):
 		else:
 			nums = l.split(' ')
 			current_ranges.append([int(num) for num in nums])
-
 	ranges[map_name] = current_ranges
 	map_order.append(map_name)
-	best = float('inf')
-	nbest = float('inf')
+	return (find_lowest(seeds, map_order, ranges), find_lowest(nlist, map_order, ranges))
 
-	for seed in seeds:
+def find_lowest(arg0, map_order, ranges):
+	nbest = float('inf')
+	for seed in arg0:
 		curr = seed
 		for m in map_order:
 			for r in ranges[m]:
@@ -41,16 +41,9 @@ def main(lines):
 					curr += (r[0] - r[1])
 					break
 		nbest = min(nbest, curr)
-	print(nbest)
+	return nbest
 
-	for seed in nlist:
-		curr = seed
-		for m in map_order:
-			for r in ranges[m]:
-				if curr >= r[1] and curr <= (r[1] + r[2] - 1):
-					curr += (r[0] - r[1])
-					break
-		best = min(best, curr)
-	print(best)
-
-main(inp)
+if __name__ == '__main__':
+	sols = main(inp)
+	for i, sol in enumerate(list(sols)):
+		print(f"Part {i+1}: {sol}")
