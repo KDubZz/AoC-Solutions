@@ -20,3 +20,5 @@ Things to expect from my code:
 - Poor time efficiency
 - Unreadable code
 - Single letter variables (until I can be bothered to go back and make my solutions neat)
+
+#follow_JSSK-101
