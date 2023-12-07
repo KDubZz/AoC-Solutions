@@ -2,6 +2,7 @@ import aocd
 
 puzzle = aocd.models.Puzzle(year=2023, day=7)
 inp = puzzle.input_data.splitlines()
+example = puzzle.examples[0][0].splitlines()
 
 def kind(card):
 	card_values = {}
