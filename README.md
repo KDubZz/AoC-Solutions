@@ -1,6 +1,6 @@
 # Hi there!
 
-I'm Kshitij, a 4th form at St. Paul's School. I've been coding for a long time now, but recently moved from smaller-scale side-works to full scale projects, starting with the 2022 AoC.
+I'm Kshitij, a 5th form student at St. Paul's School. I've been coding for a long time now, but recently moved from smaller-scale side-works to full scale projects, starting with the 2022 AoC.
 
 
 ### Navigation
@@ -20,5 +20,3 @@ Things to expect from my code:
 - Poor time efficiency
 - Unreadable code
 - Single letter variables (until I can be bothered to go back and make my solutions neat)
-
-#follow_JSSK-101
